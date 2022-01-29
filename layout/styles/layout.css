@@ -20,7 +20,7 @@
 --------------------------------------------------------------------------------------------------------------- */
 #header{}
 
-#header #logo{margin:30px 0 0 0;}
+#header #logo{margin:15px 0 0 0;}
 #header #logo h1{margin:0; padding:0; font-size:22px; text-transform:uppercase;}
 
 
@@ -245,15 +245,15 @@ td{border-width:0 1px;}
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
 body{color:#CBCBCB; background-color:#222222;}
-a{color:#A95236;}
+a{color:#75BD02;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
-input:focus, textarea:focus, *:required:focus{border-color:#A95236;}
+input:focus, textarea:focus, *:required:focus{border-color:#51732C;}
 .overlay{color:#FFFFFF; background-color:inherit;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#A95236; border-color:#A95236;}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#51732C; border-color:#406809;}
 .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
 
 
@@ -278,36 +278,36 @@ input:focus, textarea:focus, *:required:focus{border-color:#A95236;}
 
 /* Content Area */
 .services article i{color:inherit; border-color:inherit;}
-.services article:hover i{color:#FFFFFF; background-color:#A95236;}
+.services article:hover i{color:#FFFFFF; background-color:#75BD02;}
 
 
 /* Call Back */
 #callback input{color:#474747; background-color:#FFFFFF; border-color:#D7D7D7;}
 #callback input:focus{border-color:#A95236;}
-#callback button{color:#FFFFFF; background-color:#A95236;}
+#callback button{color:#FFFFFF; background-color:#51732C;}
 
 
 /* Footer */
 #footer nav a{color:inherit;}
-#footer nav li:first-child a, #footer nav a:hover{color:#A95236;}
+#footer nav li:first-child a, #footer nav a:hover{color: #75BD02;}
 #footer .linklist li{border-color:rgba(0,0,0,.1);}
 
 
 /* Navigation */
 #mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#A95236; background-color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#C0C105; background-color:inherit;}
 #mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
-#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#A95236;}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#51732C;}
 #mainav form select{color:#FFFFFF; background-color:#000000; border-color:rgba(255,255,255,.2);}
 
 #breadcrumb a{color:inherit; background-color:inherit;}
-#breadcrumb li:last-child a{color:#A95236;}
+#breadcrumb li:last-child a{color:#FA8223;}
 
 .container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
-.container .sidebar nav a:hover{color:#A95236;}
+.container .sidebar nav a:hover{color:#51732C;}
 
 .pagination a, .pagination strong{border-color:#D7D7D7;}
-.pagination .current *{color:#FFFFFF; background-color:#A95236;}
+.pagination .current *{color:#FFFFFF; background-color:#51732C;}
 
 #backtotop{color:#FFFFFF; background-color:#A95236;}
 
