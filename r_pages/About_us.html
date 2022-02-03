@@ -2,6 +2,104 @@
 
 <html>
 <head>
+  <style>
+    #myImg {
+
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    #myImg:hover {opacity: 0.7;}
+    
+    
+    #myImg2 {
+    
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    #myImg2:hover {opacity: 0.7;}
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+    
+    /* Modal Content (image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+    
+    /* Caption of Modal Image */
+    #caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+    
+    /* Add Animation */
+    .modal-content, #caption {  
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+    
+    @-webkit-keyframes zoom {
+      from {-webkit-transform:scale(0)} 
+      to {-webkit-transform:scale(1)}
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(0)} 
+      to {transform:scale(1)}
+    }
+    
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px){
+      .modal-content {
+        width: 100%;
+      }
+    }
+    </style>
 <title>About Us</title>
 <link rel="icon" href="../images/demo/Logo_TWMF Only.png">
 <meta charset="utf-8">
@@ -144,19 +242,19 @@
         <p>Star Women Achievment Award in 2021.</p>
 
         <div id="gallery" >
-          <figure>
-            <!-- <header class="heading">Our Employees</header>  -->
-            <ul class="nospace clear">
-              <li class="one_quarter first"><img src="../images/demo/1/Untitled-10.jpg" alt="" style="width:100%%; height:150px;" ></li>
-              <li class="one_quarter"><img src="../images/demo/1/Untitled-11.jpg" alt="" style="width:100%%; height:150px;"></li>
-              <li class="one_quarter"><img src="../images/demo/1/Untitled-12.jpg" alt="" style="width:100%%; height:150px;"></li>
-            </ul>
-          </figure>
+          <img style="width:30%" id="myImg" class="img-fluid" src="../images/demo/1/Untitled-12.jpg">
+          <img style="width:28%"  id="myImg" class="img-fluid" src="../images/demo/1/Untitled-10.jpg" >
+          <img style="width:29%"  id="myImg" class="img-fluid" src="../images/demo/1/Untitled-11.jpg">
+         
+        </div>
+          <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img id="modal-img" class="modal-content"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS2ol73JZj6-IqypxPZXYS3rRiPwKteoD8vezk9QsRdkjt3jEn&usqp=CAU">
+          <div id="caption"></div>
         </div>
 
-      </br> 
-      
-
+<br>
 
       <h1><b>Employee</b></h1>
       <p>We share fundamental values such as teamwork, humility, diversity and commitment and we believe that there is always room for improvement. Every person is key to the success of our Foundation, and it is our collective energy that allows us overcome any challenge we set ourselves. And  saving the environment for the next generations.
@@ -274,5 +372,38 @@
 <script src="../layout/scripts/jquery.min.js"></script>
 <script src="../layout/scripts/jquery.backtotop.js"></script>
 <script src="../layout/scripts/jquery.mobilemenu.js"></script>
+
+<script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+// var img = document.getElementById("myImg");
+var modalImg = document.getElementById("modal-img");
+var captionText = document.getElementById("caption");
+// img.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// }
+
+
+document.addEventListener("click", (e) => {
+  const elem = e.target;
+  if (elem.id==="myImg") {
+    modal.style.display = "block";
+    modalImg.src = elem.dataset.biggerSrc || elem.src;
+    captionText.innerHTML = elem.alt; 
+  }
+})
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+  </script>
 </body>
 </html>
