@@ -7,6 +7,104 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+  #myImg {
+
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  
+  #myImg2 {
+  
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg2:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  </style>
 </head>
 
 <body id="top">
@@ -112,20 +210,20 @@
       <div class="wrapper row2">
         <div class="hoc container clear"> 
       
-          <!-- #################################### 6 Main Services ############################################### -->
+          <!-- #################################### 1 ############################################### -->
     <article class="one_third first">
-      <a href="#"><img src="../images/demo/1/14.jpg" alt=""></a>
+      <a href="#"><img id="myImg" src="../images/demo/1/14.jpg" alt=""></a>
       <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
          
-         <p class="btmspace-30"> We have used biological, chemical 
+         <p class="btmspace-30"> Demo
         .</p>
         </article>
        <article class="one_third">
-        <a href="#"><img src="../images/demo/2/1 (2).jpg" alt=""  style=" height:50%;"></a>
+        <a href="#"><img id="myImg" src="../images/demo/2/1 (2).jpg" alt=""  style=" height:50%;"></a>
          <p class="btmspace-30">২০১১সালে পরিকল্পিত বর্জ্য ব্যাবস্থাপনা বিষয়ক আলোচনায় মন্ত্রী মহোদয় এর সাথে। </p>
          </article>
        <article class="one_third">
-        <a href="#"><img src="../images/demo/2/2.jpg" 
+        <a href="#"><img id="myImg" src="../images/demo/2/2.jpg" 
           alt=""></a>
          <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
          <p class="btmspace-30">সুইস কন্টাক্ট NGO'র সাথে জৈব সার প্রজেক্ট এ আলোচনা। </p>
@@ -133,41 +231,43 @@
 
 
 
+     <!-- #################################### 2 ############################################### -->
          <div style="padding-top: 30%"> 
           <article class="one_third first">
-            <a href="#"><img src="../images/demo/1/14.jpg" alt=""></a>
+            <a ><img id="myImg" src="../images/demo/1/13 (1).jpg" alt=""></a>
             <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
                
                <p class="btmspace-30"> We have used biological, chemical 
               .</p>
               </article>
              <article class="one_third">
-              <a href="#"><img src="../images/demo/2/1 (2).jpg" alt=""  style=" height:50%;"></a>
+              <a href="#"><img id="myImg" src="../images/demo/1/3 (1).jpg" alt=""  style=" height:50%;"></a>
                <p class="btmspace-30">২০১১সালে পরিকল্পিত বর্জ্য ব্যাবস্থাপনা বিষয়ক আলোচনায় মন্ত্রী মহোদয় এর সাথে। </p>
                </article>
              <article class="one_third">
-              <a href="#"><img src="../images/demo/2/2.jpg" 
+              <a href="#"><img id="myImg" src="../images/demo/1/17.jpg" 
                 alt=""></a>
                <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
                <p class="btmspace-30">সুইস কন্টাক্ট NGO'র সাথে জৈব সার প্রজেক্ট এ আলোচনা। </p>
              </article>
 
 
+
+     <!-- #################################### 3 ############################################### -->
    
              <div style="padding-top: 30%"> 
               <article class="one_third first">
-                <a href="#"><img src="../images/demo/1/14.jpg" alt=""></a>
+                <a href="#"><img id="myImg" src="../images/demo/1/16.jpg" alt=""></a>
                 <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
-                   
                    <p class="btmspace-30"> We have used biological, chemical 
                   .</p>
                   </article>
                  <article class="one_third">
-                  <a href="#"><img src="../images/demo/2/1 (2).jpg" alt=""  style=" height:50%;"></a>
+                  <a href="#"><img id="myImg" src="../images/demo/1/15.jpg" alt=""  style=" height:50%;"></a>
                    <p class="btmspace-30">২০১১সালে পরিকল্পিত বর্জ্য ব্যাবস্থাপনা বিষয়ক আলোচনায় মন্ত্রী মহোদয় এর সাথে। </p>
                    </article>
                  <article class="one_third">
-                  <a href="#"><img src="../images/demo/2/2.jpg" 
+                  <a href="#"><img id="myImg" src="../images/demo/1/9.jpg" 
                     alt=""></a>
                    <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
                    <p class="btmspace-30">সুইস কন্টাক্ট NGO'র সাথে জৈব সার প্রজেক্ট এ আলোচনা। </p>
@@ -175,20 +275,21 @@
     
             
 
+     <!-- #################################### 4 ############################################### -->
                  <div style="padding-top: 30%"> 
                   <article class="one_third first">
-                    <a href="#"><img src="../images/demo/1/14.jpg" alt=""></a>
+                    <a href="#"><img id="myImg" src="../images/demo/1/7.jpg" alt=""></a>
                     <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
                        
                        <p class="btmspace-30"> We have used biological, chemical 
                       .</p>
                       </article>
                      <article class="one_third">
-                      <a href="#"><img src="../images/demo/2/1 (2).jpg" alt=""  style=" height:50%;"></a>
+                      <a href="#"><img id="myImg" src="../images/demo/1/11.jpg" alt=""  style=" height:50%;"></a>
                        <p class="btmspace-30">২০১১সালে পরিকল্পিত বর্জ্য ব্যাবস্থাপনা বিষয়ক আলোচনায় মন্ত্রী মহোদয় এর সাথে। </p>
                        </article>
                      <article class="one_third">
-                      <a href="#"><img src="../images/demo/2/2.jpg" 
+                      <a href="#"><img id="myImg" src="../images/demo/1/1643018052364.jpg" 
                         alt=""></a>
                        <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
                        <p class="btmspace-30">সুইস কন্টাক্ট NGO'র সাথে জৈব সার প্রজেক্ট এ আলোচনা। </p>
@@ -198,26 +299,108 @@
 
 
 
+     <!-- #################################### 5 ############################################### -->
 
 
                      <div style="padding-top: 30%"> 
                       <article class="one_third first">
-                        <a href="#"><img src="../images/demo/1/14.jpg" alt=""></a>
+                        <a href="#"><img id="myImg" src="../images/demo/1/1631252254213.jpg" alt=""></a>
                         <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
                            
                            <p class="btmspace-30"> We have used biological, chemical 
                           .</p>
                           </article>
                          <article class="one_third">
-                          <a href="#"><img src="../images/demo/2/1 (2).jpg" alt=""  style=" height:50%;"></a>
+                          <a href="#"><img id="myImg" src="../images/demo/1/1643017387678.jpg" alt=""  style=" height:50%;"></a>
                            <p class="btmspace-30">২০১১সালে পরিকল্পিত বর্জ্য ব্যাবস্থাপনা বিষয়ক আলোচনায় মন্ত্রী মহোদয় এর সাথে। </p>
                            </article>
                          <article class="one_third">
-                          <a href="#"><img src="../images/demo/2/2.jpg" 
+                          <a href="#"><img id="myImg" src="../images/demo/1/p2.jpg" 
                             alt=""></a>
                            <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
                            <p class="btmspace-30">সুইস কন্টাক্ট NGO'র সাথে জৈব সার প্রজেক্ট এ আলোচনা। </p>
                          </article>
+
+
+     <!-- #################################### 6 ############################################### -->
+
+     <div style="padding-top: 30%"> 
+      <article class="one_third first">
+        <a href="#"><img id="myImg" src="../images/demo/1/1641901844024.jpg" alt=""></a>
+        <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
+           
+           <p class="btmspace-30"> We have used biological, chemical 
+          .</p>
+          </article>
+         <article class="one_third">
+          <a href="#"><img id="myImg" src="../images/demo/1/1643017387685.jpg" alt=""  style=" height:50%;"></a>
+           <p class="btmspace-30">২০১১সালে পরিকল্পিত বর্জ্য ব্যাবস্থাপনা বিষয়ক আলোচনায় মন্ত্রী মহোদয় এর সাথে। </p>
+           </article>
+         <article class="one_third">
+          <a href="#"><img id="myImg" src="../images/demo/1/6.jpg" 
+            alt=""></a>
+           <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
+           <p class="btmspace-30">সুইস কন্টাক্ট NGO'র সাথে জৈব সার প্রজেক্ট এ আলোচনা। </p>
+         </article>
+
+              <!-- #################################### 7 ############################################### -->
+
+     <div style="padding-top: 30%"> 
+      <article class="one_third first">
+        <a href="#"><img id="myImg" src="../images/demo/2/WhatsApp Image 2022-01-29 at 1.49.17 AM (2).jpeg" alt=""></a>
+        <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
+           
+           <p class="btmspace-30"> We have used biological, chemical 
+          .</p>
+          </article>
+         <article class="one_third">
+          <a href="#"><img id="myImg" src="../images/demo/2/WhatsApp Image 2022-01-29 at 1.49.17 AM (7).jpeg" alt=""  style=" height:50%;"></a>
+           <p class="btmspace-30">২০১১সালে পরিকল্পিত বর্জ্য ব্যাবস্থাপনা বিষয়ক আলোচনায় মন্ত্রী মহোদয় এর সাথে। </p>
+           </article>
+         <article class="one_third">
+          <a href="#"><img id="myImg" src="../images/demo/2/WhatsApp Image 2022-01-29 at 1.49.17 AM (6).jpeg" 
+            alt=""></a>
+           <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
+           <p class="btmspace-30">সুইস কন্টাক্ট NGO'র সাথে জৈব সার প্রজেক্ট এ আলোচনা। </p>
+         </article>
+
+
+              <!-- #################################### 8 ############################################### -->
+
+     <div style="padding-top: 30%"> 
+      <article class="one_third first">
+        <a href="#"><img id="myImg" src="../images/demo/1/1643018052380.jpg" alt=""></a>
+        <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
+           
+           <p class="btmspace-30"> We have used biological, chemical 
+          .</p>
+          </article>
+         <article class="one_third">
+          <a href="#"><img id="myImg" src="../images/demo/1/5.jpg" alt=""  style=" height:50%;"></a>
+           <p class="btmspace-30">২০১১সালে পরিকল্পিত বর্জ্য ব্যাবস্থাপনা বিষয়ক আলোচনায় মন্ত্রী মহোদয় এর সাথে। </p>
+           </article>
+         <article class="one_third">
+          <a href="#"><img id="myImg" src="../images/demo/2/1643883236258.jpg" 
+            alt=""></a>
+           <!-- <footer class="btmspace-15"><a href="#">Read More &raquo;</a></footer> -->
+           <p class="btmspace-30">সুইস কন্টাক্ট NGO'র সাথে জৈব সার প্রজেক্ট এ আলোচনা। </p>
+         </article>
+
+
+
+
+
+
+
+
+ <!-- ##########################  modal  ###################################################### -->
+
+
+         <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img id="modal-img" class="modal-content"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS2ol73JZj6-IqypxPZXYS3rRiPwKteoD8vezk9QsRdkjt3jEn&usqp=CAU">
+          <div id="caption"></div>
+        </div>
           <!-- ################################################################################################ -->
       
             </div>
@@ -282,7 +465,7 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row4 bgded overlay" style="background-color:#bfbfbf;">
+<div class="wrapper row4 bgded overlay" style="background-color:#7c7c7c;">
   <footer id="footer" class="hoc clear"> 
     <!-- ################################################################################################ -->
     <div class="one_third first">
@@ -367,25 +550,35 @@
 
 <script>
   // Get the modal
-  var modal = document.getElementById("myModal");
-  
-  // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = document.getElementById("myImg");
-  var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
-  img.onclick = function(){
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+// var img = document.getElementById("myImg");
+var modalImg = document.getElementById("modal-img");
+var captionText = document.getElementById("caption");
+// img.onclick = function(){
+//   modal.style.display = "block";
+//   modalImg.src = this.src;
+//   captionText.innerHTML = this.alt;
+// }
+
+
+document.addEventListener("click", (e) => {
+  const elem = e.target;
+  if (elem.id==="myImg") {
     modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+    modalImg.src = elem.dataset.biggerSrc || elem.src;
+    captionText.innerHTML = elem.alt; 
   }
-  
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
+})
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
   </script>
 </body>
 </html>
