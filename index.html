@@ -429,5 +429,22 @@
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
 <script src="layout/scripts/jquery.flexslider-min.js"></script>
+<script> $("html").on("contextmenu",function(e){
+  return false;
+});
+</script>
+
+<!--disable Text Selection and Copying -->
+<script src='demo-to-prevent-copy-paste-on-blogger_files/googleapis.js'>
+</script>
+<script type='text/javascript'>
+	if (typeof document.onselectstart!="undefined" ) { 
+		document.onselectstart=new Function ("return false" );
+	} 
+	else { 
+		document.onmousedown=new Function ("return false" ); 
+		document.onmouseup=new Function ("return true" );
+	}
+</script>
 </body>
 </html>
